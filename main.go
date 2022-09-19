@@ -6,7 +6,8 @@ import (
 )
 
 func main() {
-	fmt.Println("Hello, Modules!")
-
-	brute.PrintHello()
+	names := brute.Force()
+	for _, name := range names {
+		fmt.Println(name)
+	}
 }
